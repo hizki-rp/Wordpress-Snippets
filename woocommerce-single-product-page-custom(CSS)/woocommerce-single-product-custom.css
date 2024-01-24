@@ -1,0 +1,133 @@
+.woocommerce-product-gallery {
+	display: flex !important;
+	align-items: center;
+	column-gap: 12px;
+	margin: 0;
+	object-fit: cover !important;
+
+}
+
+.flex-control-nav {
+	order: 1 !important;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	height: 350px;
+	margin-bottom: 20px !important;
+	
+}
+
+.flex-viewport {
+	order: 2 !important;
+	flex: 5;
+  height:450px !important;
+
+}
+
+.flex-control-nav.flex-control-thumbs li {
+	min-width: 85% !important;
+	height: 21%;
+	
+}
+
+li img {
+	border-radius: 6px;
+}
+
+.flex-active {
+	border: 3px solid #0f000850;
+}
+
+.cart ,.customize-unpreviewable {
+	display: inline-block !important;
+
+}
+
+div.yith-ywraq-add-to-quote ,.add-to-quote-30 {
+
+	display: inline-block !important;
+	transform: translateY(-30px);
+
+
+}
+
+h1.product_title {
+	font-size: 24px !important;
+	font-weight: 600;
+	margin-bottom: 20px !important;
+}
+
+.product_meta {
+	padding-bottom: 10px !important;
+	border-bottom: 1px solid #00000020;
+}
+
+.woocommerce-breadcrumb a {
+	font-weight: 600;
+ color: #0000f08f !important;
+}
+a.button {
+	width: fit-content;
+    padding: 12px 14px !important;
+	font-size: 16px!important;
+	background-color: #000066f5 !important;
+	margin-top: auto !important;
+	margin: 0 auto !important;
+	margin-top: 10% !important;	
+}
+
+a.button:hover {
+	background-color: #000096ff !important;
+
+}
+.flex-prev {
+	color:blue !important;
+	
+}
+.flex-next {
+	color: blue !important;
+
+}
+
+a.flex-next::before {
+	
+}
+
+.flex-control-nav {
+	margin-right: 5% !important;
+
+}
+
+a.flex-next::after {
+
+}
+
+li.flex-nav-next {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+li.flex-nav-prev {
+	margin-bottom: 7rem !important;
+
+}
+
+/* Increase the width of the top and left borders of the table */
+.wc-tab table {
+	border-top: 2px solid #E0E0E0;
+	border-left: 2px solid #E0E0E0;
+}
+
+/* Increase the width of the bottom and right borders of each cell */
+.wc-tab tr td {
+	border-bottom: 2px solid #E0E0E0;
+	border-right: 2px solid #E0E0E0;
+	padding: 10px;
+}
+
+/* Additional styles for the table headers to make them stand out */
+.wc-tab tr td:first-child {
+	font-weight: 900;
+	width: 25%;
+	background-color: #F5F5FA;
+}
