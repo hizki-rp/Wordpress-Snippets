@@ -1,0 +1,42 @@
+body {
+  background: 
+    repeating-linear-gradient(30deg, #fff2 0 10%, #fff0 0 24%),
+    repeating-linear-gradient(-23deg, #fff2 0 4%, #fff0 0 14%) cyan !important;
+}
+
+
+.attachment-woocommerce_thumbnail {
+	
+
+  --c: 40px;
+  --p: 10px;
+  --d: 10px;
+  background: red;
+  display: inline-block;
+  padding: var(--p);
+  background:
+  
+   
+    linear-gradient(90deg, #0000, #000 25% 75%, #0000) 50% 50% / calc(100% - var(--d)) calc(100% - var(--p)),
+   
+    radial-gradient(farthest-side at 100% 0, #00000018, #0000) calc(var(--d) * 0.5) calc(100% - var(--d) * 0.5) / var(--d) var(--d);
+  background-repeat: no-repeat;
+  clip-path: polygon(0 var(--c), var(--c) 0, 100% 0, 100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 0 100%);
+}
+
+.ast-woo-shop-product-description {
+	color: white;
+	font-weight: 600;
+}
+
+a.menu-link {
+color: black !important;
+
+}
+
+.site-primary-header-wrap {
+	margin: 0 30px;
+}
+
+.ast-builder-layout-element {
+}
