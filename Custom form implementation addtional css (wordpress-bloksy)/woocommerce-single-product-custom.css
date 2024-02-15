@@ -1,0 +1,307 @@
+input[type="text"] ,
+input[type="email"] {
+	border: none;
+	border-bottom: 1px solid #0004;
+	width: 100%;
+	font-family: "poppins", sans-serif;
+	font-size: 12px;
+	height: 45px;
+    transition: border 0.3s linear;
+
+	&:focus {
+		outline: none;
+		border-bottom: 1px solid #1daa;;
+		
+	}
+}
+
+form {
+	background-color: #fff4;
+	padding: 40px;
+	box-shadow: 1px 1px 21px 20px #0001;
+	border-radius: 6px;
+	width: 75%;
+	margin: 0 auto;
+}
+
+sup{
+	color: #f00e;
+}
+
+
+label{
+	color:  #1daf;
+	font-size: 20px !important;
+	font-weight: 800 !important;
+	letter-spacing: 0.6px;
+	word-spacing: 1.2px !important;
+	font-size: 21px !important;
+}
+
+::placeholder {
+	color:  black !important;
+	font-size: 14px;
+}
+
+input[type="submit"] {
+	width: 100% !important;
+	outline: none;
+	border: initial;
+	background-color: #1daf;
+	border-radius: 25px;
+	color: #fff;
+	font-size: 16px;
+	font-family: "poppins", sans-serif;
+	text-transform: uppercase;
+	font-weight: 700 !important;
+	line-height: 6px !important;
+	letter-spacing: 1.2px;
+	height: 60px !important;
+	transition: background-color 0.3s linear;
+}
+
+input[type="submit"]:hover {
+background-color: #0d8164;
+}
+
+.wpcf7-list-item-label {
+	color: black !important;
+	font-weight: 400;
+	font-size: 18px;
+	letter-spacing: 0.4px;
+}
+
+
+// Drop down favorite browser
+
+select , option{
+	background-color: #1da1;
+
+}
+//cu fav browser
+
+
+
+//favorite browser
+wpcf7-form-control-wrap{
+	
+}
+
+
+
+ .wpcf7-form-control-wrap .cu-fav-browser{
+  position: relative;
+  height: 55px;
+  width: 100%;
+	 font-size: 19px
+}
+
+
+ .wpcf7-form-control-wrap select {
+  font: 16px/1.6 "Roboto", sans-serif;
+  background: #ebf8ff;
+  color: #333;
+  border: 1px solid #9fddff;
+  height: 10%;
+  width: 100%;
+  cursor: pointer;
+  padding: 0 45px 0 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+//fav browser
+
+
+//gender selection
+.cu-gender input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.cu-gender input[type="radio"]+.wpcf7-list-item-label  {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+}
+
+.cu-gender input[type="radio"]+.wpcf7-list-item-label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #a6a6a6;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.cu-gender input[type="radio"]+.wpcf7-list-item-label:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+  background: #3abcff;
+  border-radius: 100%;
+  transition: all 0.2s linear;
+}
+
+.cu-gender input[type="radio"]:checked+.wpcf7-list-item-label:after {
+  opacity: 1;
+}
+
+//favorite css framework styles
+
+.cu-js-framework input[type="radio"] {
+  position: absolute ;
+  left: -9999px;
+}
+
+
+
+ input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.cu-js-framework input[type="radio"]+.wpcf7-list-item-label {
+  background: #ebf8ff;
+  border: 1px solid #1daf;
+  color: #333;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.cu-js-framework input[type="radio"]:checked+.wpcf7-list-item-label {
+  color: #fff;
+  background: #1daf;
+}
+
+//favorite css framework
+
+
+.cu-css-framework {
+  background: #ebf8ff !important;
+  border: 1px solid #1daf !important;
+  padding: 5px;
+}
+
+.cu-css-framework input[type="radio"]+.wpcf7-list-item-label {
+  color: #333;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.cu-css-framework input[type="radio"]:checked+.wpcf7-list-item-label {
+  color: #fff;
+  background: #1daf;
+}
+span#cu-css-framework {
+  background: #ebf8ff !important;
+  border: 1px solid #1daf!important;
+  padding: 22px;
+}
+
+//frequent apps checkbox
+
+
+.cu-frequent-apps input {
+  position: absolute !important;
+  left: -9999px;
+
+}
+
+.cu-frequent-apps input[type="checkbox"]+.wpcf7-list-item-label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+	font-size: 18px;
+	padding-left: -90px !important;
+}
+
+.cu-frequent-apps input {
+  position: absolute !important;
+  left: -9999px;
+}
+
+.cu-frequent-apps input[type="checkbox"]+.wpcf7-list-item-label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #1daf;
+  border-radius: 20%;
+  background: #fff;
+	margin-left: -5px;
+}
+
+.cu-frequent-apps input[type="checkbox"]+.wpcf7-list-item-label:after {
+  content: '\f00c';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 24px;
+  line-height: 1;
+  color: #3abcff;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.2s linear;
+	margin-left: -5px;
+}
+
+.cu-frequent-apps input[type="checkbox"]:checked+.wpcf7-list-item-label:after {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.cu-frequent-apps {
+	margin: 10px;
+}
+
+.cu-frequent-apps input[type="checkbox"]+.wpcf7-list-item-label {
+	margin: 10px;
+}
+
+//sport chcekbox
+
+.cu-sports input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.cu-sports input[type="checkbox"]+.wpcf7-list-item-label {
+  background: #ebf8ff;
+  border: 1px solid #3abcff;
+  color: #333;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.cu-sports input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.cu-sports input[type="checkbox"]:checked+.wpcf7-list-item-label {
+  color: #fff;
+  background: #1daf;
+}
+
+//swich slider 
+
