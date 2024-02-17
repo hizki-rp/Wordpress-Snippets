@@ -1,0 +1,486 @@
+.ct-service-box:hover p,
+.ct-service-box:hover h3,
+.ct-service-box:hover .fas {
+	color: #fff;
+	transition: color .3s;
+}
+
+
+label{
+	color:   #3abcff;
+	font-size: 20px !important;
+	font-weight: 600 !important;
+	letter-spacing: 0.6px;
+	word-spacing: 1.2px !important;
+	font-size: 21px !important;
+	margin-bottom: -13px;
+	font-weight: 700 !important;
+}
+
+p label[for="fav-browser"] {
+  margin-bottom: -13px;
+	margin-top: 55px;
+}
+
+p label[for="gender"] {
+  margin-bottom: -13px;
+	margin-top: 55px;
+}
+
+p label[for="fav-js"] {
+  margin-bottom: -13px;
+	margin-top: 55px;
+}
+
+p label[for="fav-css"] {
+  margin-bottom: -13px;
+	margin-top: 55px;
+}
+
+p label[for="frequent-apps"] {
+  margin-bottom: -13px;
+	margin-top: 55px;
+}
+
+p label[for="sports"] {
+  margin-bottom: -13px;
+	margin-top: 55px;
+}
+
+.main-label {
+	color:  #333;
+	font-size: 30px !important;
+	font-weight: 600 !important;
+
+}
+
+
+
+input[type="text"] ,
+input[type="email"] {
+	border: none;
+	border-bottom: 1px solid #a6a6a6;
+	width: 100%;
+	height: 40px;
+  font: 16px/1.6 "Roboto", sans-serif;
+	transition: border 0.3s linear;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-bottom: 1px solid #3abcff;
+}
+
+
+@media only screen and (max-width: 640px) {
+
+  input[type="text"],
+  input[type="email"] {
+    font-size: 14px;
+  }
+}
+
+form {
+	background-color: #fff;
+  padding: 0 15px;
+	box-shadow: 1px 1px 21px 20px #0001;
+	border-radius: 6px;
+	width: 75%;
+	margin: 0 auto;
+}
+
+sup{
+	color: #f00e;
+}
+
+@media only screen and (max-width: 640px) {
+  .form {
+    padding: 15px;
+  }
+}
+
+.wpcf7-form-control-wrap:has(.cu-fav-browser) {
+	position: relative;
+	 display: inline-block;
+	 	height: 45px;
+  	width: 100%;
+}
+
+
+.wpcf7-form-control-wrap:has(.cu-fav-browser):before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 93%;
+	z-index: 1;
+	width: 7%;
+	height: 100%;
+	display: flex;
+	background-color:  #9fddff;
+}
+
+
+.wpcf7-form-control-wrap:has(.cu-fav-browser):after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 95%;
+	right: 10px;
+	bottom: 0;
+	width: 0;
+  height: 0;
+	z-index: 2;
+  margin: auto;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #fff transparent transparent transparent;
+  pointer-events: none;
+}
+
+
+
+ .wpcf7-form-control-wrap:has(.cu-fav-browser) select {
+  font: 16px/1.6 "Roboto", sans-serif;
+  background: #ebf8ff;
+  color: #333;
+  border: 1px solid #9fddff;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  padding: 0 45px 0 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+
+
+
+
+
+
+
+
+input[type="submit"] {
+	width: 100% !important;
+	outline: none;
+	border: initial;
+	background-color: #3abcff;
+ border-radius: 25px;
+	color: #fff;
+  cursor: pointer;
+ font: 600 16px/1.6 "Roboto", sans-serif;
+	padding: 10px 25px;
+	text-transform: uppercase;
+	font-weight: 700 !important;
+	line-height: 6px !important;
+	letter-spacing: 2px;
+  height: 50px;
+transition: background 0.3s linear;
+}
+
+@media only screen and (max-width: 640px) {
+  input[type="submit"] {
+    font-size: 14px;
+    height: 45px;
+  }
+}
+
+input[type="submit"]:hover {
+  background: #007aba;
+}
+
+.wpcf7-list-item-label {
+	color: black !important;
+	font-weight: 400;
+	font-size: 18px;
+	letter-spacing: 0.4px;
+}
+
+
+
+{
+	background-color: #1da1;
+
+}
+
+
+
+
+
+
+ .wpcf7-form-control-wrap .cu-fav-browser{
+  position: relative;
+  height: 55px;
+  width: 100%;
+	 font-size: 19px
+}
+
+
+ .wpcf7-form-control-wrap select {
+  font: 16px/1.6 "Roboto", sans-serif;
+  background: #ebf8ff;
+  color: #333;
+  border: 1px solid #9fddff;
+  height: 10%;
+  width: 100%;
+  cursor: pointer;
+  padding: 0 45px 0 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+
+
+
+//gender selection
+.cu-gender input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.cu-gender input[type="radio"]+.wpcf7-list-item-label  {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+}
+
+.cu-gender input[type="radio"]+.wpcf7-list-item-label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #a6a6a6;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.cu-gender input[type="radio"]+.wpcf7-list-item-label:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+  background: #3abcff;
+  border-radius: 100%;
+  transition: all 0.2s linear;
+}
+
+.cu-gender input[type="radio"]:checked+.wpcf7-list-item-label:after {
+  opacity: 1;
+}
+
+
+
+.cu-js-framework input[type="radio"] {
+  position: absolute ;
+  left: -9999px;
+}
+
+
+ input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.cu-js-framework input[type="radio"]+.wpcf7-list-item-label {
+  background: #ebf8ff;
+  border: 1px solid #1daf;
+  color: #333;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.cu-js-framework input[type="radio"]:checked+.wpcf7-list-item-label {
+  color: #fff;
+  background: #1daf;
+}
+
+
+
+
+.cu-css-framework {
+  background: #ebf8ff !important;
+  border: 1px solid #1daf !important;
+  padding: 5px;
+}
+
+.cu-css-framework input[type="radio"]+.wpcf7-list-item-label {
+  color: #333;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.cu-css-framework input[type="radio"]:checked+.wpcf7-list-item-label {
+  color: #fff;
+  background: #1daf;
+}
+span#cu-css-framework {
+  background: #ebf8ff !important;
+  border: 1px solid #1daf!important;
+  padding: 22px;
+}
+
+
+
+
+.cu-frequent-apps input {
+  position: absolute !important;
+  left: -9999px;
+	
+
+}
+
+.cu-frequent-apps input[type="checkbox"]+.wpcf7-list-item-label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+	font-size: 18px;
+	padding-left: -90px !important;
+}
+
+.cu-frequent-apps input {
+  position: absolute !important;
+  left: -9999px;
+}
+
+.cu-frequent-apps input[type="checkbox"]+.wpcf7-list-item-label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #1daf;
+  border-radius: 20%;
+  background: #fff;
+	margin-left: -5px;
+}
+
+.cu-frequent-apps input[type="checkbox"]+.wpcf7-list-item-label:after {
+  content: '\f00c';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 24px;
+  line-height: 1;
+  color: #3abcff;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.2s linear;
+	margin-left: -5px;
+}
+
+.cu-frequent-apps input[type="checkbox"]:checked+.wpcf7-list-item-label:after {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.cu-frequent-apps {
+	margin: 10px;
+}
+
+.cu-frequent-apps input[type="checkbox"]+.wpcf7-list-item-label {
+	margin: 10px;
+}
+
+
+
+.cu-sports input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.cu-sports input[type="checkbox"]+.wpcf7-list-item-label {
+  background: #ebf8ff;
+  border: 1px solid #3abcff;
+  color: #333;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.cu-sports input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.cu-sports input[type="checkbox"]:checked+.wpcf7-list-item-label {
+  color: #fff;
+  background: #1daf;
+}
+
+
+
+
+.cu-slider input[type="checkbox"] {
+   opacity: 0;
+	 position: absolute;
+	 left: -9999px;
+   top: 0;
+	
+ }
+
+.cu-slider input[type="checkbox"] + .wpcf7-list-item-label {
+	display: flex;
+	align-items: center;
+	position: relative;
+	font-size: 20px;
+	margin-bottom: 4rem;
+	margin-top: 1.4rem;
+	
+}
+
+
+.cu-slider input[type="checkbox"] + .wpcf7-list-item-label:before {
+	content: "";
+	width: 38px;
+	height: 18.9px;
+	background-color: #1f94;
+	border-radius: 10px;
+	margin-right: 10px;
+	border: 2px solid #1f94;
+}
+
+.cu-slider input[type="checkbox"] + .wpcf7-list-item-label:after {
+	position: absolute;
+	left: 0.1em;
+	content: "";
+	width: 0.9em;
+	height: 0.9em;
+	background-color: #15f5;
+	border-radius: 100%;
+}
+
+.cu-slider input[type="checkbox"]:checked + .wpcf7-list-item-label:after {
+	background-color: #1f1e;
+	left: 0.9em;
+	transition: all 0.2s;
+}
+
+
+.cu-slider input[type="checkbox"]:checked + .wpcf7-list-item-label {
+	//color: #fff4;
+}
+.cu-slider input[type="checkbox"]+ .wpcf7-list-item-label {
+	//color: #fff4 !important;
+}
+
+
+
+
