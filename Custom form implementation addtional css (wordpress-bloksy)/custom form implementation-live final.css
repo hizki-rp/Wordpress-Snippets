@@ -1,11 +1,3 @@
-.ct-service-box:hover p,
-.ct-service-box:hover h3,
-.ct-service-box:hover .fas {
-	color: #fff;
-	transition: color .3s;
-}
-
-
 label{
 	color:   #3abcff;
 	font-size: 20px !important;
@@ -13,28 +5,25 @@ label{
 	letter-spacing: 0.6px;
 	word-spacing: 1.2px !important;
 	font-size: 21px !important;
-	margin-bottom: -13px;
+    margin-top: 30px;
 	font-weight: 700 !important;
 }
 
 p label[for="fav-browser"] {
-  margin-bottom: -13px;
-	margin-top: 55px;
+	margin: 5px 0;
 }
 
 p label[for="gender"] {
-  margin-bottom: -13px;
-	margin-top: 55px;
+	margin-bottom: -15px;
 }
 
 p label[for="fav-js"] {
-  margin-bottom: -13px;
+  margin-bottom: -22px;
 	margin-top: 55px;
 }
 
 p label[for="fav-css"] {
-  margin-bottom: -13px;
-	margin-top: 55px;
+margin-bottom: -7px;
 }
 
 p label[for="frequent-apps"] {
@@ -62,8 +51,10 @@ input[type="email"] {
 	border-bottom: 1px solid #a6a6a6;
 	width: 100%;
 	height: 40px;
-  font: 16px/1.6 "Roboto", sans-serif;
+    font: 16px/1.6 "Roboto", sans-serif;
+	margin-top: 20px !important;
 	transition: border 0.3s linear;
+
 }
 
 input[type="text"]:focus,
@@ -83,13 +74,17 @@ input[type="email"]:focus {
 
 form {
 	background-color: #fff;
-  padding: 0 15px;
+    padding: 0 30px;
 	box-shadow: 1px 1px 21px 20px #0001;
 	border-radius: 6px;
 	width: 75%;
 	margin: 0 auto;
 }
-
+@media (max-width: 728px) {
+	form {
+		width: 100% !important;
+	}
+}
 sup{
 	color: #f00e;
 }
@@ -161,8 +156,6 @@ sup{
 
 
 
-
-
 input[type="submit"] {
 	width: 100% !important;
 	outline: none;
@@ -215,7 +208,8 @@ input[type="submit"]:hover {
   position: relative;
   height: 55px;
   width: 100%;
-	 font-size: 19px
+	font-size: 19px
+
 }
 
 
@@ -227,6 +221,7 @@ input[type="submit"]:hover {
   height: 10%;
   width: 100%;
   cursor: pointer;
+	outline: none !important;
   padding: 0 45px 0 15px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -234,10 +229,11 @@ input[type="submit"]:hover {
 }
 
 
+.cu-fav-browser option {
+	background-color: #ebf8ff;
+}
 
 
-
-//gender selection
 .cu-gender input[type="radio"] {
   position: absolute;
   left: -9999px;
@@ -249,22 +245,24 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 
+
 .cu-gender input[type="radio"]+.wpcf7-list-item-label:before {
   content: '';
   position: absolute;
   left: 0;
-  top: 0;
+  top: 4px;
   width: 18px;
   height: 18px;
   border: 1px solid #a6a6a6;
   border-radius: 100%;
   background: #fff;
+	
 }
 
 .cu-gender input[type="radio"]+.wpcf7-list-item-label:after {
   content: '';
   position: absolute;
-  top: 4px;
+  top: 8px;
   left: 4px;
   width: 10px;
   height: 10px;
@@ -280,11 +278,6 @@ input[type="submit"]:hover {
 
 
 
-.cu-js-framework input[type="radio"] {
-  position: absolute ;
-  left: -9999px;
-}
-
 
  input[type="radio"] {
   position: absolute;
@@ -293,54 +286,57 @@ input[type="submit"]:hover {
 
 .cu-js-framework input[type="radio"]+.wpcf7-list-item-label {
   background: #ebf8ff;
-  border: 1px solid #1daf;
+  border: 1px solid #3abcff;
   color: #333;
-  padding: 10px 20px;
+  padding: 15px 20px;
   display: inline-block;
   cursor: pointer;
   transition: all 0.3s linear;
 }
 
 .cu-js-framework input[type="radio"]:checked+.wpcf7-list-item-label {
-  color: #fff;
-  background: #1daf;
+  background: #3abcff;
+  color: #fff !important;
+}
+
+.cu-js-framework .wpcf7-list-item {
+	margin-left: 5px;
 }
 
 
 
-
-.cu-css-framework {
-  background: #ebf8ff !important;
-  border: 1px solid #1daf !important;
-  padding: 5px;
-}
 
 .cu-css-framework input[type="radio"]+.wpcf7-list-item-label {
   color: #333;
-  padding: 10px 20px;
+  padding: 10px 10px;
   display: inline-block;
   cursor: pointer;
   transition: all 0.3s linear;
+	
 }
 
 .cu-css-framework input[type="radio"]:checked+.wpcf7-list-item-label {
-  color: #fff;
-  background: #1daf;
+  background: #3abcff;
+  color: #fff !important;
 }
-span#cu-css-framework {
+
+.cu-css-framework .wpcf7-list-item {
+	margin: 0 3px;
+	margin-right: -2px;
+}
+
+.cu-css-framework {
   background: #ebf8ff !important;
-  border: 1px solid #1daf!important;
-  padding: 22px;
+  border: 1px solid #3abcff !important;
+  padding-bottom: 34px ;
+  padding-right: 5px;
 }
-
-
 
 
 .cu-frequent-apps input {
   position: absolute !important;
   left: -9999px;
 	
-
 }
 
 .cu-frequent-apps input[type="checkbox"]+.wpcf7-list-item-label {
@@ -351,19 +347,15 @@ span#cu-css-framework {
 	padding-left: -90px !important;
 }
 
-.cu-frequent-apps input {
-  position: absolute !important;
-  left: -9999px;
-}
 
 .cu-frequent-apps input[type="checkbox"]+.wpcf7-list-item-label:before {
   content: '';
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 28px;
-  height: 28px;
-  border: 1px solid #1daf;
+  left: 6px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #3abcff;
   border-radius: 20%;
   background: #fff;
 	margin-left: -5px;
@@ -374,15 +366,14 @@ span#cu-css-framework {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
-  top: 2px;
-  left: 2px;
-  font-size: 24px;
+  top: 6px;
+  left: 4px;
+  font-size: 16px;
   line-height: 1;
   color: #3abcff;
   opacity: 0;
   transform: scale(0);
   transition: all 0.2s linear;
-	margin-left: -5px;
 }
 
 .cu-frequent-apps input[type="checkbox"]:checked+.wpcf7-list-item-label:after {
@@ -390,13 +381,6 @@ span#cu-css-framework {
   transform: scale(1.1);
 }
 
-.cu-frequent-apps {
-	margin: 10px;
-}
-
-.cu-frequent-apps input[type="checkbox"]+.wpcf7-list-item-label {
-	margin: 10px;
-}
 
 
 
@@ -422,16 +406,17 @@ span#cu-css-framework {
 
 .cu-sports input[type="checkbox"]:checked+.wpcf7-list-item-label {
   color: #fff;
-  background: #1daf;
+  background: #3abcff;
 }
-
-
+.cu-sports .wpcf7-list-item {
+	margin-left: 5px;
+}
 
 
 .cu-slider input[type="checkbox"] {
    opacity: 0;
-	 position: absolute;
-	 left: -9999px;
+   position: absolute;
+   left: -9999px;
    top: 0;
 	
  }
@@ -443,19 +428,19 @@ span#cu-css-framework {
 	font-size: 20px;
 	margin-bottom: 4rem;
 	margin-top: 1.4rem;
-	
 }
-
 
 .cu-slider input[type="checkbox"] + .wpcf7-list-item-label:before {
 	content: "";
 	width: 38px;
-	height: 18.9px;
-	background-color: #1f94;
+	height: 23.9px;
+  background: #cccccc;
 	border-radius: 10px;
 	margin-right: 10px;
-	border: 2px solid #1f94;
+	border: 2px solid #cccccc;
+	
 }
+
 
 .cu-slider input[type="checkbox"] + .wpcf7-list-item-label:after {
 	position: absolute;
@@ -463,14 +448,19 @@ span#cu-css-framework {
 	content: "";
 	width: 0.9em;
 	height: 0.9em;
-	background-color: #15f5;
+	background-color: #fff;
 	border-radius: 100%;
+	transition: all 0.2s;
 }
 
 .cu-slider input[type="checkbox"]:checked + .wpcf7-list-item-label:after {
-	background-color: #1f1e;
 	left: 0.9em;
 	transition: all 0.2s;
+}
+
+.cu-slider input[type="checkbox"]:checked + .wpcf7-list-item-label:before {
+	  background: #3abcff;
+	  border: 2px solid #3abcff;
 }
 
 
@@ -480,7 +470,6 @@ span#cu-css-framework {
 .cu-slider input[type="checkbox"]+ .wpcf7-list-item-label {
 	//color: #fff4 !important;
 }
-
 
 
 
