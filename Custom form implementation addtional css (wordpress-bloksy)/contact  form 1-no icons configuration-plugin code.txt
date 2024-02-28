@@ -1,0 +1,29 @@
+<label class="main-label" >CSS3 Custom Form </label>
+
+<label for="name" > Full Name</label>
+[email* your-email id:cu-name class:cu-name]
+
+<label for="email" > Email </label>
+[email* your-email id:cu-email class:cu-email ]
+
+<label for="fav-browser" > Favourite Browser? </label>
+[select* fav-browser id:cu-fav-browser class:cu-fav-browser "Google Chrome" "Mozilla Firefox" "Safari" "Microsoft Edge"]
+
+<label for="gender" > Gender </label>
+[radio radio-gender id:cu-gender class:cu-gender use_label_element default:1 "Male" "Female"]
+
+<label for="fav-js" > Favourite JS Framework </label>
+[radio fav-js id:cu-js-framework class:cu-js-framework use_label_element default:1 "React" "Vue" "Angular"]
+
+<label for="fav-css" > Favourite CSS Framework </label>
+[radio fav-css id:cu-css-framework class:cu-css-framework use_label_element default:1 "Bootstrap" "Foundation" "Material Design"]
+
+<label for="frequent-apps" > Which apps do you use frequently? </label>
+[checkbox frequent-apps id:cu-frequent-apps class:cu-frequent-apps use_label_element "Whatsapp" "Instagram" "Snapchat" "Tiktok"]
+
+<label for="sports" > Sports? </label>
+[checkbox sports id:cu-sports class:cu-sports use_label_element "Football" "Cricket" "Golf" "Swimming" ]
+
+[checkbox slider id:cu-slider class:cu-slider use_label_element "status"]
+
+[submit id:submit class:cu-submit "submit"]
