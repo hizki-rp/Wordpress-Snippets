@@ -1,0 +1,491 @@
+body {
+  color: #333;
+  background: #ebf8ff;
+  font: 16px/1.6 "Roboto", sans-serif !important;
+}
+/* label styles */
+label {
+  color: #3abcff;
+	font-size: 16px;
+  font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+/* HEADER TEXT STYLE */
+.main-label {
+	display: block;
+	height: 50px;
+  color: #333;
+  font-size: 30px;
+  font-weight: 400;
+}
+/* FORM CUSTOMIZATION */
+form {
+	font-size: 16px;
+  background-color: #fff;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px !important;
+  margin: 0 auto;
+  width: 60%;
+}
+
+/* INPUT CUSTOMIZATION */
+input[type="text"],
+input[type="email"] {
+  border: none !important;
+	border-radius: 0;
+	outline: none;
+	border-bottom: 1px solid #a6a6a6 !important;
+  width: 100%;
+  height: 35px;
+  font: 16px/1.6 "Roboto", sans-serif;
+  transition: border 0.3s linear;
+}
+/* FOCUS STATE OF TEXT AND EMAIL */
+p:has(label[for="first-name"]),
+p:has(label[for="last-name"]),
+p:has(label[for="cu-email-two"]),
+p:has(label[for="phone"]){
+  margin: 0;
+	margin-top: 15px;
+}
+
+.wpcf7-form input[type="text"]:focus,
+.wpcf7-form
+input[type="email"]:focus {
+  outline: none !important;
+  border-bottom: 1px solid #3abcff !important;
+}
+/* ALIGN FIRST NAME AND LAST NAME ON THE SAME LINE */
+.name {
+  display: flex;
+	column-gap: 5%;
+}
+/* -- INPUT LABEL ICONS -- */
+/*LABEL CUSTOMIZATION */
+label[for="first-name"],
+label[for="last-name"],
+label[for="cu-email-two"],
+label[for="phone"] {
+	font-size: 16px !important;
+	position: relative !important;
+	padding-left: 20px;
+	line-height: 1;
+}
+
+label[for="fav-browser"],
+label[for="gender"] ,
+label[for="fav-css"],
+label[for="fav-js"],
+label[for="frequent-apps"],
+label[for="sports"]{
+  display: block !important;
+	margin-bottom: -22px !important;
+	margin-top: 25px;
+}
+
+/* NAME ICONS */
+label[for="first-name"]:before,
+label[for="last-name"]:before {
+	  content: '\f007';
+
+}
+/* EMAIL ICON */
+label[for="cu-email-two"]:before {
+	 content: '\f003';
+}
+/* PHONE ICON */
+label[for="phone"]:before {
+	  content: '\f095';
+}
+
+/* ALL ICONS STYLE */
+label[for="first-name"]:before,
+label[for="last-name"]:before,
+label[for="cu-email-two"]:before,
+label[for="phone"]:before {
+	  font-family: "Font Awesome 5 Free";
+  position: absolute;
+	font-size: 14px;
+	font-weight: 700 !important;
+  top: 0;
+  left: 0;
+  color: #3abcff;
+  transition: all 0.2s linear;
+}
+label[for="cu-email-two"]:before {
+margin-top: 1px !important;
+}
+/* SUBMIT BUTTON CUSTOMIZATION */
+.wpcf7-submit {
+  width: 100% !important;
+	height: 50px;
+  outline: none !important;
+  border: initial !important;
+  background-color: #3abcff !important;
+  border-radius: 25px !important;
+  color: #fff;
+  cursor: pointer;
+  font: 600 16px/1.6 "Roboto", sans-serif;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  line-height: 6px !important;
+  letter-spacing: 2px;
+  margin: 0 auto !important;
+	margin-left: 3px;
+  transition: background 0.3s linear;
+}
+/* SUBMIT BUTTON HOVER */
+input[type="submit"]:hover {
+  background: #007aba !important;
+}
+
+/* FAV BROWSER CUSTOMIZATION */ 
+.wpcf7-form-control-wrap:has(.cu-fav-browser) {
+	height: 45px !important;
+	position: relative;
+	display: flex;
+}
+.wpcf7-form-control-wrap:has(.cu-fav-browser)::before,
+.wpcf7-form-control-wrap:has(.cu-fav-browser)::after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  pointer-events: none;
+}
+.wpcf7-form-control-wrap:has(.cu-fav-browser)::before {
+  width: 30px;
+  background: #3abcff;
+}
+
+.wpcf7-form-control-wrap:has(.cu-fav-browser)::after {
+  width: 0;
+  height: 0;
+  right: 10px;
+  margin: auto;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #fff transparent transparent transparent;
+}
+
+.wpcf7-form-control-wrap:has(.cu-fav-browser) select {
+  font: 16px/1.6 "Roboto", sans-serif;
+  background: #ebf8ff;
+  color: #333;
+  border: 1px solid #9fddff;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* FOCUS STATE */
+.wpcf7-form-control-wrap:has(.cu-fav-browser) select:focus {
+  outline: none;
+}
+
+/* REMOVE ORIGINAL INPUTS FOR SELECT, RADIO AND CHECKBOX  */
+.cu-gender input[type="radio"],
+.cu-js-framework input[type="radio"],
+.cu-css-framework input[type="radio"],
+.cu-frequent-apps input[type="checkbox"],
+.cu-sports input[type="checkbox"],
+.cu-slider input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+/* INPUT LABEL CUSTOMIZATION AND FACILITATING CUSTOM INPUTS */
+.cu-gender input[type="radio"]+.wpcf7-list-item-label,
+.cu-js-framework input[type="radio"]+.wpcf7-list-item-label,
+.cu-frequent-apps input[type="checkbox"]+.wpcf7-list-item-label,
+.cu-sports input[type="checkbox"]+.wpcf7-list-item-label,
+.cu-slider
+input[type="checkbox"] + .wpcf7-list-item-label {
+  position: relative; /* LET'S US USE ABSOLUTE POSITIONING */
+  cursor: pointer;
+  color: #000d;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 20px !important;
+  margin-right: 20px !important;
+}
+.cu-gender input[type="radio"]+.wpcf7-list-item-label,
+.cu-frequent-apps input[type="checkbox"]+.wpcf7-list-item-label {
+	padding-left: 25px !important;
+}
+/*GENDER CUSTOMIZATION*/
+
+.cu-gender .wpcf7-list-item {
+	margin: 0;
+}
+.cu-gender input[type="radio"]+.wpcf7-list-item-label {
+	line-height: 1 !important;
+	margin: 0;
+	padding: 0;
+	margin-left: auto !important
+}
+.cu-gender input[type="radio"]+.wpcf7-list-item-label:before {
+  content: '';
+  position: absolute;
+	top: 0;
+	left: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #a6a6a6;
+  border-radius: 100%;
+  background: #fff;
+	margin-left: 0;
+}
+/* CUSTOM RADIO BLUE BACKGROUND */
+.cu-gender input[type="radio"]+.wpcf7-list-item-label:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+  background: #3abcff;
+  border-radius: 100%;
+  transition: all 0.2s linear;
+	margin-right: auto;
+}
+/* CHECKED STATE */
+.cu-gender input[type="radio"]:checked+.wpcf7-list-item-label:after {
+  opacity: 1;
+}
+/* FOVOURITE JS FRAMEWORK */
+/*LABEL ALIGNMENT */
+
+/* JS FRAMEWORK CUSTOMIZATION */
+.cu-js-framework input[type="radio"]+.wpcf7-list-item-label {
+  background: #ebf8ff;
+  border: 1px solid #3abcff;
+  padding: 15px 20px;
+  display: inline-block;
+  cursor: pointer;
+	color: #000d;
+	font-weight: 400;
+	font-size: 16px;
+  transition: all 0.3s linear;
+}
+/* CHECKED STATE */
+.cu-js-framework input[type="radio"]:checked+.wpcf7-list-item-label {
+  background: #3abcff;
+  color: #fff !important;
+}
+/* REMOVING UNNECESSARY MARGINS */
+.cu-js-framework .wpcf7-list-item {
+	margin-left: 0 !important;
+	margin-right: -15px !important;
+}
+
+/* FAV CSS CUSTOMIZATION*/
+.cu-css-framework .wpcf7-list-item {
+	margin: 0;
+	padding: 0;
+}
+
+.cu-css-framework {
+  display: inline-block;
+  border: 1px solid #3abcff;
+	background: #ebf8ff;
+	padding: 20px 6px 20px 6px;
+}
+
+.cu-css-framework input[type="radio"]+.wpcf7-list-item-label {
+  color: #000d;
+	font-size: 16px;
+	font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s linear;
+	padding: 15px 12px;
+  margin: 0 2px;
+}
+
+.cu-css-framework input[type="radio"]:checked+.wpcf7-list-item-label {
+  color: #fff;
+  background: #3abcff;
+}
+/* FREQUENT APPS CUSTOMIZATION */
+.cu-frequent-apps .wpcf7-list-item {
+	margin: 0;
+	padding: 0;
+}
+.cu-frequent-apps input[type="checkbox"]+.wpcf7-list-item-label {
+	padding: 0;
+	margin: 0;
+	font-size: 16px !important;
+	padding-left: 23px !important;
+	line-height: 1;
+}
+
+.cu-frequent-apps input[type="checkbox"]+.wpcf7-list-item-label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #a6a6a6;
+  border-radius: 1px;
+  background: #fff;
+}
+.cu-frequent-apps input[type="checkbox"]+.wpcf7-list-item-label:after {
+  content: '\f00c';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  font-size: 16px;
+  color: #3abcff;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.2s ease-in;
+}
+/* CHECKED STATE */
+.cu-frequent-apps input[type="checkbox"]:checked+.wpcf7-list-item-label:after {
+  opacity: 1;
+  transform: scale(1.1);
+}
+/* SPORTS CUSTOMIZATION */
+.cu-sports .wpcf7-list-item {
+	margin: 0;
+	padding: 0;
+}
+.cu-sports .wpcf7-list-item label {
+	margin: 0;
+	padding: 0;
+ display: inline-block !important;
+}
+
+.cu-sports input[type="checkbox"]+.wpcf7-list-item-label {
+  background: #ebf8ff;
+  border: 1px solid #3abcff;
+  color: #333;
+	font-weight: 400;
+	margin-right: 5px !important;
+  padding: 14px 20px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s linear;
+	margin-bottom: 15px !important;
+}
+/* CHECKED STATE */
+.cu-sports input[type="checkbox"]:checked+.wpcf7-list-item-label {
+  color: #fff;
+  background: #3abcff;
+}
+/* DECREASE PADDING */
+/* SLIDER CUSTOMIZATION */
+
+/* SLIDER LABEL CUSTOMIZATION */
+
+.cu-slider .wpcf7-list-item {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.cu-slider input[type="checkbox"] + .wpcf7-list-item-label {
+	 font: 16px/1.6 "Roboto", sans-serif !important;
+	display: flex;
+	color: #000d !important;
+	position: relative;
+	cursor: pointer;
+	font-size: 16px;
+  margin-bottom: 15px;
+	padding-left: 55px !important;
+}
+
+.cu-slider input[type="checkbox"] + .wpcf7-list-item-label:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 45px;
+	height: 25px;
+  background: #cccccc;
+	border-radius: 35px;
+	border: 2px solid #cccccc;
+	border: none;
+}
+
+.cu-slider input[type="checkbox"] + .wpcf7-list-item-label:after {
+	position: absolute;
+	content: "";
+	top: 3.3px;
+  left: 4px !important;
+	width: 18px;
+	height: 18px;
+	background-color: #fff;
+	border-radius: 50%;
+	transition: all 0.35s linear;
+}
+
+.cu-slider input[type="checkbox"]:checked + .wpcf7-list-item-label:after {
+	left: 23.4px !important;
+}
+
+.cu-slider input[type="checkbox"]:checked + .wpcf7-list-item-label:before {
+	  background: #3abcff;
+}
+/* MEDIA QUERIES */
+@media only screen and (max-width: 640px) {
+  input[type="text"],
+  input[type="email"] {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1050px) {
+ .wpcf7-form {
+    width: 70% !important;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .wpcf7-form {
+		width: 80%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 860px) {
+  .wpcf7-form {
+    width: 90% !important;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+ .wpcf7-form {
+    width: 100% !important;
+    padding: 4px;
+  }
+}
+@media (max-width: 640px) {
+	.cu-css-framework {
+		padding: 10px 10px 32px 4px;
+	}
+	.cu-css-framework input[type="radio"]+.wpcf7-list-item-label {
+		padding: 14px 5px 13px 5px;
+	}
+}	
+@media (max-width: 440px) {
+	.cu-css-framework input[type="radio"]+.wpcf7-list-item-label {
+		font-size: 12px;
+		padding: 20px 5px 15px 5px;
+	}
+.cu-css-framework {
+
+	}
+}
+@media only screen and (max-width: 640px) {
+  input[type="submit"] {
+    font-size: 14px;
+    height: 45px;
+  }
+}
